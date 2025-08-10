@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Assignment</title>
+</head>
+<body>
+
+<header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>This page demonstrates lists, tables, media, and a complete HTML5 form with proper attributes and validation.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Features of Our Registration System</h2>
+        <ul>
+            <li>Easy and quick sign-up</li>
+            <li>Secure data storage</li>
+            <li>Responsive and accessible design</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Available Courses</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Course Name</th>
+                    <th>Duration</th>
+                    <th>Fee (KSH)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Web Development Basics</td>
+                    <td>4 Weeks</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>Advanced HTML & CSS</td>
+                    <td>6 Weeks</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>JavaScript Fundamentals</td>
+                    <td>5 Weeks</td>
+                    <td>120</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Introduction Video</h2>
+        <video controls width="320">
+            <source src="https://videos.pexels.com/video-files/3129671/3129671-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Watch this short video to learn more about our programs.</p>
+    </section>
+
+    <section>
+        <h2>Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <label for="fullname">Full Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="example@mail.com" required><br><br>
+
+            <label for="password">Create Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Choose a strong password" required minlength="6"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="+254700000000" pattern="^\+?[0-9]{10,15}$" required><br><br>
+
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="">Select...</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <label for="course">Choose a Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="">Select...</option>
+                <option value="webdev">Web Development Basics</option>
+                <option value="htmlcss">Advanced HTML & CSS</option>
+                <option value="javascript">JavaScript Fundamentals</option>
+            </select><br><br>
+
+            <label for="bio">Short Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself"></textarea><br><br>
+
+            <label for="readonly-info">Registration Type:</label><br>
+            <input type="text" id="readonly-info" value="Standard" readonly><br><br>
+
+            <label>Preferred Contact Method:</label><br>
+            <input type="radio" id="contact-email" name="contact" value="email" required>
+            <label for="contact-email">Email</label><br>
+            <input type="radio" id="contact-phone" name="contact" value="phone">
+            <label for="contact-phone">Phone</label><br><br>
+
+            <label for="newsletter">Subscribe to newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter" value="yes"><br><br>
+
+            <label for="profile-pic">Upload Profile Picture:</label><br>
+            <input type="file" id="profile-pic" name="profile-pic" accept="image/*"><br><br>
+
+            <button type="submit">Submit Registration</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Enhanced Form Demo. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
